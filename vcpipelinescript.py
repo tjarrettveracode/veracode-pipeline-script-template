@@ -166,10 +166,10 @@ def main():
     creds_expire_days_warning()
 
     # get application
-    print("Getting information for application {}".format(appid)
+    print("Getting information for application {}".format(appid))
     appinfo = getapplication(appid)
     if appinfo == None:
-        print("Could not get information for application {}".format(appid)
+        print("Could not get information for application {}".format(appid))
         return
 
     app_message_name = "Application ID {} ({})".format(appid,appinfo['profile']['name'])
