@@ -152,7 +152,7 @@ def getcwerules(policy):
 def main():
     parser = argparse.ArgumentParser(
         description='This script generates Pipeline Scan template command lines for the applications specified based on the uploaded modules and the policy in use.')
-    parser.add_argument('-a', '--application', required=False, help='Application ID for the application for which you want a Pipeline Script template.',default="239510")
+    parser.add_argument('-a', '--application', required=False, help='Application ID for the application for which you want a Pipeline Script template.')
     args = parser.parse_args()
 
     appid = args.application
